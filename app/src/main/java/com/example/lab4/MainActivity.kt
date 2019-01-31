@@ -1,5 +1,6 @@
 package com.example.lab4
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
@@ -59,22 +60,16 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
-            R.id.nav_camera -> {
-                // Handle the camera action
-            }
-            R.id.nav_gallery -> {
+            R.id.nav_home -> {
+                val intent = Intent(this, HomeActivity::class.java)
+                startActivity(intent)
 
             }
-            R.id.nav_slideshow -> {
-
+            R.id.nav_projects -> {
+                val intent = Intent(this,ProjectsActivity::class.java)
+                startActivity(intent)
             }
-            R.id.nav_manage -> {
-
-            }
-            R.id.nav_share -> {
-
-            }
-            R.id.nav_send -> {
+            R.id.nav_map -> {
 
             }
         }
