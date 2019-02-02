@@ -70,6 +70,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 startActivity(intent)
             }
             R.id.nav_map -> {
+                val intent = Intent(this, MapsActivity::class.java)
+                startActivity(intent)
 
             }
         }
