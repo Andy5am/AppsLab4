@@ -36,6 +36,15 @@
                 android:name=".MapsActivity"
                 android:label=
                         "@string/title_activity_maps">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                        android:scheme="https"
+                        android:host="console.developers.google.com"
+                        android:pathPrefix="/maps"/>
+            </intent-filter>
         </activity>
         <activity android:name=".Lab3Activity">
         </activity>
